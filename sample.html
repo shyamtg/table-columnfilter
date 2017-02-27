@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Column Filter</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		  <link rel="stylesheet" href="tableColumnFilter.css">
+		  <script src="jquery-3.1.1.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		  <script src="tableColumnFilter.js"></script>
+		<script>
+			$(function() {
+				//table - pass the classname of the table
+				//columnNo - pass array having column index  which needs filter option [0,1,2]
+				columnFilter('filterTable',[0,1,2])
+			});
+		</script>	
+	</head>
+	<body>
+		<div class="row">
+			<div class="well">
+				<h1>Column Filter Demo</h1> 
+		</div>
+		<div class="container">
+			<table class="filterTable table table-bordered table-hover">
+				<thead>
+				  <tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Email</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>John</td>
+					<td>Doe</td>
+					<td>john@example.com</td>
+				  </tr>
+				  <tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				  </tr>
+				  <tr>
+					<td>July</td>
+					<td>Dooley</td>
+					<td>july@example.com</td>
+				  </tr>
+				  <tr>
+					<td>Mary</td>
+					<td>Moe</td>
+					<td>mary@example.com</td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>
+	</body>
+</html>

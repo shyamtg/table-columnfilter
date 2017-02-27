@@ -1,0 +1,31 @@
+.tableHeader{
+	/* assign the class to a table tag to style the header*/
+  white-space: nowrap;
+}
+
+.table-FilterArrow{
+	cursor: pointer;
+	display:inline-block;
+}
+
+.tableFilter-content {
+  /* this class is to construct the column filter list for a table and keep it in hidden mode*/
+  position:absolute !important;
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 100px; text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); height:300px; overflow:auto;
+} 
+.table-FilterArrow:hover .tableFilter-content {
+	/* filter list will be displayed on hover*/
+	display: inline;
+	z-index: 1060;
+	width: auto;
+	height: auto;
+	padding: 15px;
+	position: absolute !important;
+	padding-bottom: 0px;
+	border-radius: 5px;
+	font-weight:normal;
+	font-size: 12px;
+}
